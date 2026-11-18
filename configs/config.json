@@ -1,0 +1,30 @@
+{
+  "data_root": "data/raw",
+  "partitions": {
+    "train": "train",
+    "student_test": "student_test",
+    "eval_test": "eval_test"
+  },
+  "random_seed": 42,
+  "candidates": {
+    "radius_m": 60.0,
+    "max_candidates": 12,
+    "densify_step_m": 10.0
+  },
+  "features": {
+    "heading_window": 2,
+    "context_window": 5,
+    "min_heading_displacement_m": 3.0
+  },
+  "cv": {
+    "n_splits": 5
+  },
+  "hmm": {
+    "beta": 5.0,
+    "emission_weight": 1.0,
+    "prob_floor": 1e-6,
+    "sp_cutoff_base_m": 100.0,
+    "sp_cutoff_gc_factor": 2.0,
+    "sp_cutoff_per_second_m": 25.0
+  }
+}
