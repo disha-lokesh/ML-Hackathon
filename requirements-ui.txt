@@ -1,0 +1,5 @@
+# Laptop 2 (UI only)
+streamlit==1.52.2
+streamlit-folium==0.27.4
+folium==1.0.0
+requests==2.34.2

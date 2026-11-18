@@ -1,0 +1,19 @@
+{
+  "model": "XGBoost",
+  "best_cv_top1": 0.9110821040566007,
+  "best_params": {
+    "n_estimators": 300,
+    "learning_rate": 0.021228822625719162,
+    "max_depth": 7,
+    "min_child_weight": 3.885510124992377,
+    "subsample": 0.6195650072958573,
+    "colsample_bytree": 0.6212359967631055,
+    "reg_lambda": 0.006551913171616566,
+    "reg_alpha": 0.4209636514157266,
+    "gamma": 0.003487967512502047
+  },
+  "n_trials": 30,
+  "cv_folds": 3,
+  "objective": "mean GroupKFold observation-level Top-1",
+  "optimisation_seconds": 508.9198293000227
+}

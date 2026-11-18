@@ -1,0 +1,54 @@
+{
+  "feature_columns": [
+    "dist",
+    "dist_rank",
+    "dist_gap",
+    "dist_ratio",
+    "n_cand",
+    "head_diff",
+    "head_cos",
+    "head_valid",
+    "speed",
+    "arc_len",
+    "t_proj",
+    "at_end",
+    "ctx_dist",
+    "ctx_rank",
+    "ctx_head_cos",
+    "out_deg",
+    "in_deg",
+    "two_way",
+    "dt_prev"
+  ],
+  "candidates": {
+    "radius_m": 60.0,
+    "max_candidates": 12,
+    "densify_step_m": 10.0
+  },
+  "features": {
+    "heading_window": 2,
+    "context_window": 5,
+    "min_heading_displacement_m": 3.0
+  },
+  "hmm": {
+    "beta": 5.0,
+    "emission_weight": 0.25,
+    "prob_floor": 1e-06,
+    "sp_cutoff_base_m": 100.0,
+    "sp_cutoff_gc_factor": 2.0,
+    "sp_cutoff_per_second_m": 25.0
+  },
+  "model": "XGBoost",
+  "model_params": {
+    "n_estimators": 300,
+    "learning_rate": 0.021228822625719162,
+    "max_depth": 7,
+    "min_child_weight": 3.885510124992377,
+    "subsample": 0.6195650072958573,
+    "colsample_bytree": 0.6212359967631055,
+    "reg_lambda": 0.006551913171616566,
+    "reg_alpha": 0.4209636514157266,
+    "gamma": 0.003487967512502047
+  },
+  "random_seed": 42
+}

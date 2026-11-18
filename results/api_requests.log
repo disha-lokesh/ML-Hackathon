@@ -1,0 +1,56 @@
+2026-11-18 11:40:45,882 | WARNING | No trips found in partition 'eval_test' - falling back to 'student_test' (development mode)
+2026-11-18 11:40:46,036 | INFO | Loaded model XGBoost with HMM params {'beta': 5.0, 'emission_weight': 0.25, 'prob_floor': 1e-06, 'sp_cutoff_base_m': 100.0, 'sp_cutoff_gc_factor': 2.0, 'sp_cutoff_per_second_m': 25.0}; serving partition 'student_test' (10 trips)
+2026-11-18 11:40:46,448 | INFO | GET / from 127.0.0.1 -> 404 (1.7 ms)
+2026-11-18 11:40:46,451 | INFO | HEAD / from 127.0.0.1 -> 404 (0.9 ms)
+2026-11-18 11:40:47,965 | INFO | GET /favicon.ico from 127.0.0.1 -> 404 (0.3 ms)
+2026-11-18 11:40:55,181 | INFO | GET /trips from 127.0.0.1 -> 200 (113.1 ms)
+2026-11-18 11:40:57,249 | INFO | PREDICT trip=00000000 use_hmm=True
+2026-11-18 11:40:58,133 | INFO | RESULT trip=00000000 points=2503 hmm_acc=0.9844 clf_acc=0.9592 continuity=0.936 len_f1=0.9971 total=0.73s
+2026-11-18 11:40:58,144 | INFO | POST /predict from 127.0.0.1 -> 200 (899.6 ms)
+2026-11-18 11:41:00,199 | INFO | PREDICT trip=00000007 use_hmm=True
+2026-11-18 11:41:00,434 | INFO | RESULT trip=00000007 points=1354 hmm_acc=0.9993 clf_acc=0.9505 continuity=1.000 len_f1=0.9965 total=0.18s
+2026-11-18 11:41:00,440 | INFO | POST /predict from 127.0.0.1 -> 200 (242.4 ms)
+2026-11-18 11:41:02,490 | INFO | PREDICT trip=00000009 use_hmm=True
+2026-11-18 11:41:03,881 | INFO | RESULT trip=00000009 points=1049 hmm_acc=0.9047 clf_acc=0.8818 continuity=0.843 len_f1=0.9712 total=1.00s
+2026-11-18 11:41:03,901 | INFO | POST /predict from 127.0.0.1 -> 200 (1414.9 ms)
+2026-11-18 11:41:05,974 | INFO | PREDICT trip=00000040 use_hmm=True
+2026-11-18 11:41:06,949 | INFO | RESULT trip=00000040 points=2995 hmm_acc=0.9793 clf_acc=0.9389 continuity=0.965 len_f1=0.9994 total=0.75s
+2026-11-18 11:41:06,973 | INFO | POST /predict from 127.0.0.1 -> 200 (999.2 ms)
+2026-11-18 11:41:09,033 | INFO | PREDICT trip=00000052 use_hmm=True
+2026-11-18 11:41:09,212 | INFO | RESULT trip=00000052 points=262 hmm_acc=0.9924 clf_acc=0.9809 continuity=0.877 len_f1=0.9984 total=0.16s
+2026-11-18 11:41:09,215 | INFO | POST /predict from 127.0.0.1 -> 200 (183.8 ms)
+2026-11-18 11:41:11,260 | INFO | PREDICT trip=00000056 use_hmm=True
+2026-11-18 11:41:15,051 | INFO | RESULT trip=00000056 points=3958 hmm_acc=0.9570 clf_acc=0.9121 continuity=0.890 len_f1=0.9779 total=2.27s
+2026-11-18 11:41:15,117 | INFO | POST /predict from 127.0.0.1 -> 200 (3860.6 ms)
+2026-11-18 11:41:17,164 | INFO | PREDICT trip=00000065 use_hmm=True
+2026-11-18 11:41:17,968 | INFO | RESULT trip=00000065 points=768 hmm_acc=0.9245 clf_acc=0.8958 continuity=0.920 len_f1=0.9911 total=0.55s
+2026-11-18 11:41:17,986 | INFO | POST /predict from 127.0.0.1 -> 200 (826.4 ms)
+2026-11-18 11:41:20,057 | INFO | PREDICT trip=00000076 use_hmm=True
+2026-11-18 11:41:24,299 | INFO | RESULT trip=00000076 points=1486 hmm_acc=0.9677 clf_acc=0.9260 continuity=0.864 len_f1=0.9790 total=2.73s
+2026-11-18 11:41:24,385 | INFO | POST /predict from 127.0.0.1 -> 200 (4332.1 ms)
+2026-11-18 11:41:26,465 | INFO | PREDICT trip=00000077 use_hmm=True
+2026-11-18 11:41:28,372 | INFO | RESULT trip=00000077 points=3911 hmm_acc=0.8714 clf_acc=0.7681 continuity=0.926 len_f1=0.9882 total=1.39s
+2026-11-18 11:41:28,405 | INFO | POST /predict from 127.0.0.1 -> 200 (1944.1 ms)
+2026-11-18 11:41:30,497 | INFO | PREDICT trip=00000091 use_hmm=True
+2026-11-18 11:41:31,140 | INFO | RESULT trip=00000091 points=874 hmm_acc=0.9451 clf_acc=0.8867 continuity=0.860 len_f1=0.9923 total=0.45s
+2026-11-18 11:41:31,154 | INFO | POST /predict from 127.0.0.1 -> 200 (659.8 ms)
+2026-11-18 11:41:49,865 | INFO | GET /health from 127.0.0.1 -> 200 (1.9 ms)
+2026-11-18 11:41:52,036 | INFO | GET /trips from 127.0.0.1 -> 200 (128.3 ms)
+2026-11-18 11:42:04,100 | INFO | GET /health from 127.0.0.1 -> 200 (2.0 ms)
+2026-11-18 11:42:06,250 | INFO | GET /trips from 127.0.0.1 -> 200 (107.7 ms)
+2026-11-18 11:42:08,303 | INFO | PREDICT trip=00000000 use_hmm=True
+2026-11-18 11:42:09,107 | INFO | RESULT trip=00000000 points=2503 hmm_acc=0.9844 clf_acc=0.9592 continuity=0.936 len_f1=0.9971 total=0.62s
+2026-11-18 11:42:09,118 | INFO | POST /predict from 127.0.0.1 -> 200 (816.7 ms)
+2026-11-18 12:31:54,415 | WARNING | No trips found in partition 'eval_test' - falling back to 'student_test' (development mode)
+2026-11-18 12:31:54,656 | INFO | Loaded model XGBoost with HMM params {'beta': 5.0, 'emission_weight': 0.25, 'prob_floor': 1e-06, 'sp_cutoff_base_m': 100.0, 'sp_cutoff_gc_factor': 2.0, 'sp_cutoff_per_second_m': 25.0}; serving partition 'student_test' (10 trips)
+2026-11-18 12:31:54,958 | INFO | HEAD / from 127.0.0.1 -> 404 (0.6 ms)
+2026-11-18 12:31:56,064 | INFO | GET /favicon.ico from 127.0.0.1 -> 404 (0.4 ms)
+2026-11-18 12:31:56,202 | INFO | GET / from 127.0.0.1 -> 404 (0.3 ms)
+2026-11-18 12:31:56,286 | INFO | GET /favicon.ico from 127.0.0.1 -> 404 (0.2 ms)
+2026-11-18 12:32:04,355 | INFO | GET /health from 127.0.0.1 -> 200 (4.0 ms)
+2026-11-18 12:32:06,570 | INFO | GET /trips from 127.0.0.1 -> 200 (183.4 ms)
+2026-11-18 12:33:26,214 | INFO | GET /health from 127.0.0.1 -> 200 (1.7 ms)
+2026-11-18 12:33:28,377 | INFO | GET /trips from 127.0.0.1 -> 200 (122.6 ms)
+2026-11-18 12:33:30,442 | INFO | PREDICT trip=00000000 use_hmm=True
+2026-11-18 12:33:31,469 | INFO | RESULT trip=00000000 points=2503 hmm_acc=0.9844 clf_acc=0.9592 continuity=0.936 len_f1=0.9971 total=0.80s
+2026-11-18 12:33:31,492 | INFO | POST /predict from 127.0.0.1 -> 200 (1058.7 ms)

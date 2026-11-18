@@ -1,0 +1,108 @@
+train rows=485801 (excluded trips ['00000033', '00000054']), test rows=160251
+== LogisticRegression
+{"model": "LogisticRegression", "family": "Linear", "config": "L2, C=1.0, lbfgs", "cv_f1_macro_mean": 0.9378, "cv_f1_macro_std": 0.0145, "cv_top1_mean": 0.9026, "cv_top1_std": 0.0258, "cv_log_loss_mean": 0.0802, "cv_train_f1_macro_mean": 0.9403, "test_accuracy": 0.9716, "test_precision_macro": 0.9322, "test_recall_macro": 0.933, "test_f1_macro": 0.9326, "test_f1_pos": 0.8813, "test_log_loss": 0.0763, "test_top1": 0.8894, "test_route_continuity_clf_only": 0.7762, "fit_time_s": 6.6441, "test_inference_s": 0.2188, "inference_ms_per_1k_points": 11.4194}
+== GaussianNB
+{"model": "GaussianNB", "family": "Probabilistic", "config": "var_smoothing=1e-9", "cv_f1_macro_mean": 0.912, "cv_f1_macro_std": 0.0132, "cv_top1_mean": 0.8745, "cv_top1_std": 0.0232, "cv_log_loss_mean": 0.3557, "cv_train_f1_macro_mean": 0.9103, "test_accuracy": 0.9566, "test_precision_macro": 0.8775, "test_recall_macro": 0.9386, "test_f1_macro": 0.9047, "test_f1_pos": 0.8343, "test_log_loss": 0.3602, "test_top1": 0.8622, "test_route_continuity_clf_only": 0.75, "fit_time_s": 0.5611, "test_inference_s": 0.0692, "inference_ms_per_1k_points": 3.6125}
+== KNN
+{"model": "KNN", "family": "Instance-based", "config": "k=25, distance-weighted, train cap 150k rows", "cv_f1_macro_mean": 0.9336, "cv_f1_macro_std": 0.0156, "cv_top1_mean": 0.8946, "cv_top1_std": 0.0298, "cv_log_loss_mean": 0.113, "cv_train_f1_macro_mean": 0.9667, "test_accuracy": 0.9712, "test_precision_macro": 0.9316, "test_recall_macro": 0.9312, "test_f1_macro": 0.9314, "test_f1_pos": 0.8791, "test_log_loss": 0.0977, "test_top1": 0.8905, "test_route_continuity_clf_only": 0.7518, "fit_time_s": 0.0698, "test_inference_s": 24.1529, "inference_ms_per_1k_points": 1260.5877}
+== DecisionTree
+{"model": "DecisionTree", "family": "Tree", "config": "max_depth=12, min_leaf=50, gini", "cv_f1_macro_mean": 0.9392, "cv_f1_macro_std": 0.0184, "cv_top1_mean": 0.9011, "cv_top1_std": 0.0303, "cv_log_loss_mean": 0.0904, "cv_train_f1_macro_mean": 0.954, "test_accuracy": 0.974, "test_precision_macro": 0.9437, "test_recall_macro": 0.9311, "test_f1_macro": 0.9373, "test_f1_pos": 0.8893, "test_log_loss": 0.0773, "test_top1": 0.8908, "test_route_continuity_clf_only": 0.7801, "fit_time_s": 11.141, "test_inference_s": 0.0237, "inference_ms_per_1k_points": 1.239}
+== RandomForest
+{"model": "RandomForest", "family": "Ensemble (bagging)", "config": "200 trees, max_depth=18, min_leaf=5", "cv_f1_macro_mean": 0.9449, "cv_f1_macro_std": 0.0164, "cv_top1_mean": 0.9067, "cv_top1_std": 0.0289, "cv_log_loss_mean": 0.0633, "cv_train_f1_macro_mean": 0.9749, "test_accuracy": 0.9764, "test_precision_macro": 0.95, "test_recall_macro": 0.9364, "test_f1_macro": 0.9431, "test_f1_pos": 0.8995, "test_log_loss": 0.0595, "test_top1": 0.9083, "test_route_continuity_clf_only": 0.8001, "fit_time_s": 162.5482, "test_inference_s": 0.5212, "inference_ms_per_1k_points": 27.2028}
+== HistGradientBoosting
+{"model": "HistGradientBoosting", "family": "Boosting", "config": "300 iters, lr=0.1, 31 leaves", "cv_f1_macro_mean": 0.9432, "cv_f1_macro_std": 0.0168, "cv_top1_mean": 0.9041, "cv_top1_std": 0.0288, "cv_log_loss_mean": 0.0683, "cv_train_f1_macro_mean": 0.9595, "test_accuracy": 0.9748, "test_precision_macro": 0.9435, "test_recall_macro": 0.9357, "test_f1_macro": 0.9396, "test_f1_pos": 0.8934, "test_log_loss": 0.0634, "test_top1": 0.9022, "test_route_continuity_clf_only": 0.7831, "fit_time_s": 3.9163, "test_inference_s": 0.3638, "inference_ms_per_1k_points": 18.9901}
+== XGBoost
+{"model": "XGBoost", "family": "Boosting", "config": "300 trees, lr=0.1, depth=6, subsample=0.8", "cv_f1_macro_mean": 0.9434, "cv_f1_macro_std": 0.0161, "cv_top1_mean": 0.9063, "cv_top1_std": 0.0293, "cv_log_loss_mean": 0.0645, "cv_train_f1_macro_mean": 0.9725, "test_accuracy": 0.9771, "test_precision_macro": 0.9502, "test_recall_macro": 0.9397, "test_f1_macro": 0.9449, "test_f1_pos": 0.9027, "test_log_loss": 0.0576, "test_top1": 0.9134, "test_route_continuity_clf_only": 0.8148, "fit_time_s": 8.2197, "test_inference_s": 0.1232, "inference_ms_per_1k_points": 6.4304}
+== MLP
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (30) reached and the optimization hasn't converged yet.
+  warnings.warn(
+{"model": "MLP", "family": "Neural network", "config": "64-32 ReLU, Adam lr=1e-3, alpha=1e-4, early stopping", "cv_f1_macro_mean": 0.9416, "cv_f1_macro_std": 0.0142, "cv_top1_mean": 0.9056, "cv_top1_std": 0.0252, "cv_log_loss_mean": 0.0702, "cv_train_f1_macro_mean": 0.9528, "test_accuracy": 0.9723, "test_precision_macro": 0.9385, "test_recall_macro": 0.9281, "test_f1_macro": 0.9332, "test_f1_pos": 0.8822, "test_log_loss": 0.0661, "test_top1": 0.8895, "test_route_continuity_clf_only": 0.8052, "fit_time_s": 55.2514, "test_inference_s": 0.0453, "inference_ms_per_1k_points": 2.3667}
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+C:\Users\DIYA AGARWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+  warnings.warn(
+                  model              family                                                config  cv_f1_macro_mean  cv_f1_macro_std  cv_top1_mean  cv_top1_std  cv_log_loss_mean  cv_train_f1_macro_mean  test_accuracy  test_precision_macro  test_recall_macro  test_f1_macro  test_f1_pos  test_log_loss  test_top1  test_route_continuity_clf_only  fit_time_s  test_inference_s  inference_ms_per_1k_points
+0    LogisticRegression              Linear                                      L2, C=1.0, lbfgs          0.937766         0.014517      0.902562     0.025830          0.080211                0.940336       0.971638              0.932204           0.932966       0.932584     0.881273       0.076284   0.889405                        0.776195    6.644095          0.218795                   11.419379
+1            GaussianNB       Probabilistic                                    var_smoothing=1e-9          0.911952         0.013151      0.874487     0.023228          0.355736                0.910292       0.956643              0.877461           0.938626       0.904692     0.834327       0.360188   0.862213                        0.749989    0.561109          0.069215                    3.612484
+2                   KNN      Instance-based          k=25, distance-weighted, train cap 150k rows          0.933600         0.015643      0.894642     0.029825          0.113035                0.966667       0.971170              0.931559           0.931208       0.931383     0.879134       0.097749   0.890501                        0.751810    0.069831         24.152860                 1260.587683
+3          DecisionTree                Tree                       max_depth=12, min_leaf=50, gini          0.939246         0.018387      0.901085     0.030251          0.090354                0.954036       0.974022              0.943735           0.931131       0.937308     0.889332       0.077290   0.890814                        0.780094   11.140971          0.023740                    1.239029
+4          RandomForest  Ensemble (bagging)                   200 trees, max_depth=18, min_leaf=5          0.944911         0.016378      0.906718     0.028896          0.063324                0.974896       0.976443              0.950045           0.936440       0.943098     0.899540       0.059546   0.908299                        0.800088  162.548230          0.521205                   27.202761
+5  HistGradientBoosting            Boosting                          300 iters, lr=0.1, 31 leaves          0.943236         0.016773      0.904093     0.028820          0.068318                0.959534       0.974821              0.943543           0.935677       0.939561     0.893398       0.063393   0.902192                        0.783062    3.916327          0.363849                   18.990052
+6               XGBoost            Boosting             300 trees, lr=0.1, depth=6, subsample=0.8          0.943366         0.016056      0.906309     0.029275          0.064470                0.972545       0.977105              0.950237           0.939709       0.944887     0.902749       0.057611   0.913361                        0.814763    8.219671          0.123207                    6.430402
+7                   MLP      Neural network  64-32 ReLU, Adam lr=1e-3, alpha=1e-4, early stopping          0.941630         0.014239      0.905587     0.025153          0.070157                0.952805       0.972262              0.938476           0.928143       0.933224     0.882167       0.066097   0.889509                        0.805248   55.251394          0.045347                    2.366728

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/processed/
+# evaluator trips are supplied on the API laptop at evaluation time
+data/raw/eval_test/*
+!data/raw/eval_test/README.md
+.streamlit/secrets.toml
