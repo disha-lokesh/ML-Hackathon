@@ -110,3 +110,4 @@ The reference routes are read only after prediction, inside `pathsnap.pipeline.e
 - Trips are never split across partitions. CV uses `GroupKFold` grouped by trip.
 - The scaler and models are fitted on training folds only. The decoder parameters are tuned on out-of-fold probabilities of training trips.
 - The student-test trips are used only for development comparison. The evaluator trips are used only by the API at demo time.
+# ML-Hackathon
