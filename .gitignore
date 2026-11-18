@@ -7,3 +7,5 @@ data/processed/
 data/raw/eval_test/*
 !data/raw/eval_test/README.md
 .streamlit/secrets.toml
+.ipynb_checkpoints/
+.DS_Store
